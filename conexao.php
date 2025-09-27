@@ -10,4 +10,7 @@ $conn = mysqli_connect($hot, $user, $password, $db); // Erro: $hot ao invés de 
 if ($conn->connect_error) { //alterção na logica
     die("Falha de conexão: " .$sconn->connect_error); //adição para mensagem de erro
 }
+
+
+
 ?>
