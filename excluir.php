@@ -6,5 +6,5 @@ $id = $_GET["id"];
 $sql = "DELETE FROM usuarios WHERE id = $id";
 mysqli_query($conn, $sql);
 
-header("Location: index.php");
+header("location: index.php"); //troca de "Location" para "location"
 ?>
