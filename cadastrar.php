@@ -25,4 +25,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Email: <input type="email" name="email">
     <br>
     <input type="submit" value="cadastrar"> <!-- Mudança de "Cadastrar" para "cadastrar" -->
+<!-- Não faz mais nada além do erro, deixa o usuario preso na pagina de erro -->
 </form>
