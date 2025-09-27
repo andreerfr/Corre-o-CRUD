@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
     $email = $_POST["email"];
 
-    $sql = "UPDATE usuarios SET nome='$nome', email='$email' WHERE id=$id";
+    $sql = "UPDATE usuarios SET nome='$nome', email='$email' WHERE id='$id'"; //adição de '' em $id
     mysqli_query($conn, $sql);
     header("Location: index.php");
 }
@@ -20,5 +20,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <form method="POST">
     Nome: <input type="text" name="nome" value="<?= $dado['nome'] ?>"><br>
     Email: <input type="email" name="email" value="<?= $dado['email'] ?>"><br>
-    <input type="submit" value="Salvar">
+    <input type="submit" value="salvar"> <!-- "Salvar" foi alterado pra "salvar" -->
 </form>
